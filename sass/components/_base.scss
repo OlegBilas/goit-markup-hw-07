@@ -1,0 +1,138 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    background-color: $white-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.visially-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section {
+    padding: 94px 0px;
+}
+
+.container {
+    width: 1200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+.link {
+    display: block;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $header-color;
+    transition: color 250ms $timing-function;
+}
+.logo {
+    margin-right: 93px;
+
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: inherit;
+}
+
+.logo--blue {
+    color: $accent-color;
+}
+
+.logo--black {
+    color: $header-color;
+}
+
+.logo--white {
+    color: $white-color;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__item:not(:last-child) {
+    margin-right: 50px;
+}
+.social-list {
+    display: inline-flex;
+    justify-content: space-between;
+
+    width: 206px;
+    height: 44px;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    color: $social-link-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: color 250ms $timing-function,
+        background-color 250ms $timing-function;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+    background-color: $accent-color;
+    color: $white-color;
+}
+
+.social-list__link:not(:last-child()) {
+    margin-right: 10px;
+}
+
+.social-list__svg {
+    fill: currentColor;
+}
+.title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $header-color;
+}
