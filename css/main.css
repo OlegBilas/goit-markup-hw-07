@@ -139,7 +139,7 @@ ul {
 .link--current {
   position: relative;
 }
-.link::after {
+.link--current::after {
   content: "";
   position: absolute;
   top: 275%;
@@ -510,7 +510,7 @@ footer .social-list__svg {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.our-team {
+.section__our-team {
   background-color: #f5f4fa;
 }
 
@@ -534,7 +534,7 @@ footer .social-list__svg {
   text-align: center;
 }
 
-.our-team .social-list {
+.our-team__social-list {
   margin: 0 32px 30px;
 }
 
@@ -773,7 +773,6 @@ footer .social-list__svg {
 
 .portfolio__title {
   margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -783,7 +782,6 @@ footer .social-list__svg {
 
 .portfolio__text {
   margin-left: 24px;
-  margin-right: 24px;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
