@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -21,9 +23,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 
   min-width: 528px;
   min-height: 581px;
@@ -35,9 +34,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+
   .backdrop.is-hidden & {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+  .backdrop & {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

@@ -1,3 +1,5 @@
+$logo: "logo";
+
 .logo {
   margin-right: 93px;
 
@@ -17,11 +19,12 @@
   &--white {
     color: $white-color;
   }
-  &--margins-header {
-    margin-top: 24px;
-    margin-bottom: 25px;
-  }
-  &--margins-footer {
-    margin: 0px 0px 20px;
-  }
+}
+
+.header__#{$logo} {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.footer__#{$logo} {
+  margin: 0px 0px 20px;
 }
