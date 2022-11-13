@@ -6,9 +6,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 1;
 
-  translate: opacity 250 ms $timing-function;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 
   background: rgba(0, 0, 0, 0.2);
 }
